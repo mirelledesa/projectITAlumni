@@ -2,7 +2,7 @@
     --color-bg: #F5F3EF;
     --color-text: #2B2B2B;
     --gradient-primary: linear-gradient(90deg, #A02B93 0%, #C83B89 100%);
-    }
+    
     
     /* Typography */
     --font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
@@ -12,7 +12,7 @@
     --spacing-sm: 16px;
     --spacing-md: 24px;
     --spacing-lg: 32px;
-
+}
     * {
     box-sizing: border-box;
     margin: 0;
@@ -22,7 +22,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 70%; 
+    margin-top: auto;
+    
 }
     .logo-container {
     display: flex;
@@ -43,9 +44,9 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    padding: 0;
+    padding: 2rem 1.5rem ;
 
     }
     .main {
@@ -64,15 +65,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-     gap: 10%;
-    height: 22rem;
+    justify-content: flex-start;
+    gap: 17rem;
+    height: auto;
    
 }
 
 .welcome-tagline {
     margin-top: 0;
-    font-size: 1.2rem; 
+    font-size: 1.1rem; 
     line-height: 1.4;
     font-weight: 400;
     color: var(--color-text);

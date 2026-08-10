@@ -1,19 +1,24 @@
 .btn-primary {
-    display: block;
     width: 100%;
+    display: inline-block;
     padding: 14px 24px;
-    border-radius: var(--radius-btn);
     background: var(--gradient-primary);
     color: #FFFFFF;
-    
+    font-family: var(--font-family-base);
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
     text-decoration: none;
-    box-shadow: 0 4px 12px rgba(160, 43, 147, 0.2);
+    border-radius: var(--radius-btn);
+    border: none;
+    cursor: pointer;
     transition: opacity 0.2s ease, transform 0.1s ease;
 }
 
+.btn-primary:hover {
+    opacity: 0.95;
+}
+
 .btn-primary:active {
-    opacity: 0.9;
     transform: scale(0.98);
+}
