@@ -1,0 +1,67 @@
+
+/*home.css*/
+/* ==========================================================================
+   HOME / WELCOME PAGE (styles/pages/home.css)
+   ========================================================================== */
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    min-height: 100vh;
+}
+
+/*  Header and Logo */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+    display: block;
+}
+
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.welcome-container {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 17rem;
+    height: auto;
+}
+
+.welcome-tagline {
+    margin-top: 0;
+    font-size: 1.1rem; 
+    line-height: 1.4;
+    font-weight: 400;
+    color: var(--color-text);
+}

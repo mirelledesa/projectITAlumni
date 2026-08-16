@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITAlumni - Register</title>
+    
+   
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/components/buttons.css">
+    <link rel="stylesheet" href="./styles/components/forms.css">
+</head>
+<body class="register-page">
+    <main class="register-card">
+        
+        <h1 class="register-title">Crea un compte</h1>
+        <p class="register-subtitle">Uneix-te a nosaltres per connectar-te i compartir oportunitats!</p>
+        
+        
+        <form class="register-form" id="register-form">
+            <div class="input-group">
+                <span class="input-icon" aria-hidden="true">👤</span>
+                <input type="text" id="firstName" name="firstName" class="form-input" placeholder="Posa el teu nom" required>
+            </div>
+
+            <div class="input-group">
+                <span class="input-icon" aria-hidden="true">👤</span>
+                <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Posa el teu cognom" required>
+            </div>
+
+            <div class="input-group">
+                <span class="input-icon" aria-hidden="true">✉️</span>
+                <input type="email" id="email" name="email" class="form-input" placeholder="El teu correu electrònic" required>
+            </div>
+
+            <div class="input-group">
+                <span class="input-icon" aria-hidden="true">🔒</span>
+                <input type="password" id="password" name="password" class="form-input" placeholder="Crea una contrasenya" required>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Accepto els Termes i condiciones</label>
+            </div>
+            
+            <button type="submit" class="btn-primary">Registra't</button>
+        </form>
+           
+        <div class="divider">
+            <span>o</span>
+        </div>
+        
+        <div class="social-buttons">
+            <!-- Classes corrigidas com espaço -->
+            <button type="button" class="btn-social btn-apple">
+                <span class="social-icon" aria-hidden="true">🍎</span>Continua amb Apple
+            </button>
+            <button type="button" class="btn-social btn-google">
+                <span class="social-icon" aria-hidden="true">g</span>Continua amb Google
+            </button>
+            <button type="button" class="btn-social btn-facebook">
+                <span class="social-icon" aria-hidden="true">f</span>Continua amb Facebook
+            </button>
+        </div>
+
+        <p class="login-redirect">
+            Ja t'has registrat? <a href="#" class="link-highlight">Inicia sessió</a>
+        </p>
+    </main>
+</body>
+</html>
