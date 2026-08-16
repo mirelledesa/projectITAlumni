@@ -14,9 +14,10 @@
 }
 
 .register-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+    font-size: 2.1rem;
+    font-weight: 480;
+    margin-bottom: 2rem;
+
 }
 
 .register-subtitle {
@@ -41,6 +42,7 @@
     position: absolute;
     left: 1rem;
     font-size: 1rem;
+    color: #666666;
 }
 
 .form-input {
@@ -50,14 +52,25 @@
     border-radius: var(--radius-btn);
     font-size: 0.875rem;
     outline: none;
+    background-color:  #FDF2F2;
+    
 }
-
+.form-input::placeholder {
+    color:#888888; 
+    opacity: 1;
+}
 .checkbox-group {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     font-size: 0.8125rem;
     text-align: left;
+}
+.checkbox-group input[type="checkbox"] {
+    accent-color: #C83B89; 
+    width: 18px;            
+    height: 18px;
+    cursor: pointer;
 }
 
 .divider {
@@ -71,12 +84,12 @@
 .divider::after {
     content: '';
     flex: 1; 
-    border-bottom: 1px solid #E5E7EB;
+    border-bottom: 1.5px solid #E5E7EB;
 }
 
 .divider span {
     padding: 0 0.5rem; 
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: #888888;
 }
 
@@ -94,4 +107,19 @@
 
 .link-highlight:hover {
     text-decoration: underline;
+}
+/* resposive */
+
+.register-subtitle {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    .register-subtitle {
+        display: block;
+        font-size: 0.875rem;
+        color: #666666;
+        margin-bottom: 1.5rem;
+    }
 }

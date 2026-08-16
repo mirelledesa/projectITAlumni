@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITAlumni - Register</title>
     
    
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/components/main.css">
     <link rel="stylesheet" href="./styles/components/buttons.css">
-    <link rel="stylesheet" href="./styles/components/forms.css">
+    <link rel="stylesheet" href="./styles/components/register.css">
 </head>
 <body class="register-page">
     <main class="register-card">
@@ -19,22 +21,22 @@
         
         <form class="register-form" id="register-form">
             <div class="input-group">
-                <span class="input-icon" aria-hidden="true">👤</span>
+                <span class="input-icon" aria-hidden="true"><span class="material-symbols-outlined"> person</span></span>
                 <input type="text" id="firstName" name="firstName" class="form-input" placeholder="Posa el teu nom" required>
             </div>
 
             <div class="input-group">
-                <span class="input-icon" aria-hidden="true">👤</span>
+                <span class="input-icon" aria-hidden="true"><span class="material-symbols-outlined">person</span></span>
                 <input type="text" id="lastName" name="lastName" class="form-input" placeholder="Posa el teu cognom" required>
             </div>
 
             <div class="input-group">
-                <span class="input-icon" aria-hidden="true">✉️</span>
+                <span class="input-icon" aria-hidden="true"><span class="material-symbols-outlined">mail</span></span>
                 <input type="email" id="email" name="email" class="form-input" placeholder="El teu correu electrònic" required>
             </div>
 
             <div class="input-group">
-                <span class="input-icon" aria-hidden="true">🔒</span>
+                <span class="input-icon" aria-hidden="true"><span class="material-symbols-outlined">lock</span></span>
                 <input type="password" id="password" name="password" class="form-input" placeholder="Crea una contrasenya" required>
             </div>
 
@@ -53,13 +55,13 @@
         <div class="social-buttons">
             <!-- Classes corrigidas com espaço -->
             <button type="button" class="btn-social btn-apple">
-                <span class="social-icon" aria-hidden="true">🍎</span>Continua amb Apple
+                <span class="social-icon" aria-hidden="true"><i class="fa-brands fa-apple social-icon"></i></span>Continua amb Apple
             </button>
             <button type="button" class="btn-social btn-google">
-                <span class="social-icon" aria-hidden="true">g</span>Continua amb Google
+                <span class="social-icon" aria-hidden="true"><i class="fa-brands fa-google social-icon"></i></span>Continua amb Google
             </button>
             <button type="button" class="btn-social btn-facebook">
-                <span class="social-icon" aria-hidden="true">f</span>Continua amb Facebook
+                <span class="social-icon" aria-hidden="true"><i class="fa-brands fa-facebook social-icon"></i></span>Continua amb Facebook
             </button>
         </div>
 
