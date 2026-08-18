@@ -1,6 +1,4 @@
-/* ==========================================================================
-   FORMS & CARDS (styles/components/forms.css)
-   ========================================================================== */
+/*register.css*/
 
 .register-card {
     background-color: #FFFFFF;
@@ -122,4 +120,13 @@
         color: #666666;
         margin-bottom: 1.5rem;
     }
+}
+/*style login*/
+.forgot-password-container{
+    text-align: right;
+    margin-top: -0,25rem;
+    margin-bottom: 0,5rem;
+}
+.forgot-link{
+    font-size: 0.8125rem;
 }
