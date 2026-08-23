@@ -7,32 +7,69 @@
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--Links-->
     <link rel="stylesheet" href="./styles/components/main.css">
-    <link rel="stylesheet" href="./styles/components/feed.css">
+    <link rel="stylesheet" href="./styles/components/home.css">
+    <link rel="stylesheet" href="./styles/components/buttons.css">
 </head>
 <body class="feed-page">
     <header class="app-header">
-        <img src="./assets/images/logo-header-home.png" alt="ITAlumni" class="header-logo">
+      <h1 class="title-app-header">Home</h1>
         <div class="user-avatar">
-            <i class="fa-regular fa-circle-user"></i>
+            <span class="material-symbols-outlined">leaderboard</span>
+            <img src="./assets/images/avatar (1).png" alt="ITAlumni" class="header-logo">
+            
         </div>
     </header>
 
-    <main class="feed-contanier">
+    <main class="feed-container">
         <!--search-->
          <div class="search-bar">
             <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            <input type="text" placeholder="Cerca..." class="search-input">
+            <input type="text" placeholder="Search Alumni..." class="search-input">
         </div>
         <!--cards-->
         <section class="feed-cards">
             <article class="feed-card">
                 <div class="card-image-placeholder"></div>
+                    <h2 class="h2-card-image">Networking</h2>
+                    <p class="p-card-image">Connect with professionais in your field</p>
+                    <button class="card-action-btn">Explore</button>
+            </article>
+
+            <article class="feed-card">
+                <div class="card-image-placeholder"></div>
+                <h2 class="h2-card-image">Job Opportunities</h2>
+                <p class="p-card-image">Discover openings tailored to your skills</p>
+                <button class="card-action-btn">Search Jobs</button>
             </article>
         </section>
     </main>
+    <!--Bottom Navigation Bar-->
+    <nav class="bottom-nav">
+        <!--Home-->
+        <a href="./home.html" class="nav-item" tittle="Home">
+        <i class="fa-solid fa-house"></i>
+         <p class="p-nav-bottom">Home</p>
+        </a>
+        <!--Network-->
+        <a href="./network.html" class="nav-item" title="Network">
+            <span class="material-symbols-outlined">person_play</span>
+            <p class="p-nav-bottom">Networking</p>
+        </a>
+        <!--job / oportunitats-->
+        <a href="./oportunitats.html" class="nav-item" tittle="Job / oportunitats">
+            <span class="material-symbols-outlined">business_center</span>
+             <p class="p-nav-bottom">Job Portal</p>
+        </a>
+
+          <!--Profile-->
+        <a href="./oportunitats.html" class="nav-item" tittle="Job / oportunitats">
+            <span class="material-symbols-outlined">person</span>
+             <p class="p-nav-bottom">Profile</p>
+        </a>
+    </nav>
     
 </body>
 </html>

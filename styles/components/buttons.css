@@ -54,3 +54,25 @@
 .btn-apple { background-color: #FFF0F5; color: white; }
 .btn-google { background-color: #FDF2F2; color: #D93025; }
 .btn-facebook { background-color: #F0F7FF; color: #1877F2; }
+
+/*home*/
+
+.nav-item {
+    color: #888888;
+    font-size: 1.35rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.33%;
+    height: 100%;
+    transition: color 0.2s ease;
+}
+
+.nav-item.active {
+    color: #C83B89; 
+}
+
+.nav-item:hover {
+    color: #A02B93;
+}
