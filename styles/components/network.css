@@ -56,3 +56,26 @@ body.network-page {
     border-radius: 8px;
     flex-shrink: 0;
 }
+
+/* filters Job pag*/
+
+/* Filters Container */
+.filters-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Icons styling */
+.filter-icon {
+    font-size: 1.1rem;
+    color: #1F2937;
+}
+
+.arrow-icon {
+    font-size: 0.7rem;
+    color: #6B7280;
+    margin-left: 0.1rem;
+}

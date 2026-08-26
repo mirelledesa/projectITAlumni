@@ -73,3 +73,17 @@
     cursor: pointer;
     text-align: center;
 }
+
+/* Job pag */
+/* Filter Buttons */
+.filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: transparent;
+    border: none;
+    font-size: 0.85rem;
+    color: #4B5563;
+    cursor: pointer;
+    padding: 0;
+}
