@@ -3,7 +3,7 @@
 
 
 
-body {
+body.welcome-page {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -46,14 +46,13 @@ body {
 
 .welcome-container {
     width: 100%;
-    max-width: 280px;
+    max-width: 320px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    gap: 17rem;
-    height: auto;
+    justify-content: space-between;
+    min-height: 45vh;
 }
 
 .welcome-tagline {
@@ -62,4 +61,41 @@ body {
     line-height: 1.4;
     font-weight: 400;
     color: var(--color-text);
+}
+
+/*responsivity*/
+
+.welcome-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.desktop-only {
+    display: none !important;
+}
+
+/* Breakpoint 1: Tablet */
+@media (min-width: 768px) {
+    body.welcome-page { padding: 3rem 2rem; }
+    .header { margin-top: 0; }
+    .logo-img { max-width: 220px; }
+    .welcome-container { max-width: 500px; min-height: auto; gap: 2rem; }
+    .welcome-actions { max-width: 320px; }
+}
+
+/* Breakpoint 2: Desktop */
+@media (min-width: 1024px) {
+    body.welcome-page { padding: 2rem 5rem; }
+    .header { justify-content: flex-start; }
+    .logo-img { max-width: 180px; }
+    .welcome-container { max-width: 650px; margin-top: 1rem; margin-bottom: 2rem; }
+    .welcome-heading { font-size: 2.5rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.5rem; }
+    .welcome-tagline { font-size: 1.15rem; }
+    .welcome-actions { flex-direction: row; justify-content: center; max-width: 360px; }
+    .desktop-only { display: flex !important; }
+    .hero-media { width: 100%; max-width: 850px; margin-top: 1rem; justify-content: center; }
+    .media-placeholder { width: 100%; height: 380px; background-color: #E5E7EB; border-radius: 16px; display: flex; align-items: center; justify-content: center; }
+    .play-btn { width: 54px; height: 54px; border-radius: 50%; border: none; background-color: #FFFFFF; color: #C83B89; font-size: 1.1rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; }
 }

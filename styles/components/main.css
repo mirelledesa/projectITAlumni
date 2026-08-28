@@ -116,8 +116,8 @@ body {
 }
 
 .user-avatar-placeholder {
-    width: 5.5rem;       /* Increased size (was likely 4rem) */
-    height: 15.5rem;      /* Keeps it square */
+    width: 5.5rem;      
+    height: 5.5rem;      /* Keeps it square */
     border-radius: 8px;
     flex-shrink: 0;
 }
