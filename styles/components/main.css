@@ -115,6 +115,13 @@ body {
     transition: border-color 0.2s ease;
 }
 
+.user-avatar-placeholder {
+    width: 5.5rem;       /* Increased size (was likely 4rem) */
+    height: 15.5rem;      /* Keeps it square */
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
 /* footer-nav bar*/
 .nav-item{
     display: flex;
@@ -143,5 +150,5 @@ body {
     justify-content: space-around;
     align-items: center;
     z-index: 100;
-    margin-bottom: 0.5rem;
+   
 }
