@@ -93,24 +93,55 @@ body.welcome-page {
 
 /* Breakpoint 2: Desktop */
 @media (min-width: 1024px) {
-    body.welcome-page { padding: 2rem 5rem; }
-    .header { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; padding: 1.5rem 0; }
-    .header-desktop-home{ display: flex; align-items: center; gap: 2rem;}
+    body.welcome-page { padding: 2rem ; }
+    .header { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto; padding: 0.5rem 0; border-bottom: 1px solid #E5E7EB; border-top : 1px solid #E5E7EB ;  }
+    .header-desktop-home{ display: flex; align-items: center; gap: 13rem; margin: 0;}
     .desktop-nav-home{ display: flex; gap: 1.5rem; }
-    .desktop-home{text-decoration: none; color: var(--color-text); font-size: 0.875rem;}
-    .desktop-home.active{ color: #C83B89; font-weight: 600; border-bottom: 2px solid #C83B89; padding-bottom: 4px;}
-    .header-start{ display: flex; gap: 0.75rem;}
-    .logo-img { max-width: 180px; }
+    .desktop-home{text-decoration: none; color: gray; font-size: 0.900rem; font-weight: 400 ;}
+    .desktop-home.active{ color: #C83B89; font-weight: 700; border-bottom: 2px solid #C83B89; padding-bottom: 4px;}
+    .header-star{display: flex;  }
+    .header-start .btn-primary, .header-start .btn-secondary{  width: auto ; padding: 0.5rem 1.7rem; font-size: 0.85rem; white-space: nowrap; font-weight: 400; margin-left: 2rem; }
+    .header-start .material-symbols-outlined {font-size: 0.80rem;}
+    .logo-img { max-width: 130px; margin: 0; }
 
-    .hero-media{ width: 100%; max-width: 900px; margin: 2rem auto 0}
-    .hero-banner{ position: relative width: 100%; height: 440px; border-radius: 16px; overflow: hidden; }
-    .hero-img{ width: 100%; height: 100%; object-fit: cover;}
+   
     .play-btn{ position: absolute; top: 70%; left: 50%; display: flex}
-    .welcome-container { max-width: 650px; margin-top: 1rem; margin-bottom: 2rem; }
-    .welcome-heading { font-size: 2.5rem; font-weight: 700; color: var(--color-text); margin-bottom: 0.5rem; display: block !important; }
+    .welcome-container { max-width: 850px; margin: 6rem 1.5rem; }
+    .welcome-heading { font-size: 2.5rem; font-weight: 700; color: var(--color-text); margin-bottom: 2rem; display: block !important; }
     .welcome-tagline { font-size: 1.15rem; }
-    .welcome-actions { flex-direction: row; justify-content: center; max-width: 360px; }
+    .welcome-actions { flex-direction: row; justify-content: center; max-width: 360px; margin-top: 0.3rem;}
     .desktop-only { display: flex !important; }
     .media-placeholder { width: 100%; height: 380px; background-color: #E5E7EB; border-radius: 16px; display: flex; align-items: center; justify-content: center; }
-    .play-btn { width: 54px; height: 54px; border-radius: 50%; border: none; background-color: #FFFFFF; color: #C83B89; font-size: 1.1rem; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; }
+
+    .hero-media{ width: 100%; margin: 1.5rem auto 0}
+    .hero-banner{ position: relative ; width: 100%; height: 440px; border-radius: 16px; overflow: hidden; }
+    .hero-img{ width: 100%; height: 100%; object-fit: cover;}
+    .section-title { text-align: center; font-size: 1.75rem; font-weight: 600; color: var(--color-text, #333); margin: 4rem 0 2.5rem 0;}
+    .benefits-grid { display: flex; justify-content: center; gap: 2.5rem; max-width: 1100px; margin: 0 auto; }
+    .benefit-card { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 1rem; }
+    .benefit-icon { color: #C83B89; margin-bottom: 1rem ;}
+    .benefit-icon .material-symbols-outlined { font-size: 2.5rem;}
+    .benefit-text { font-size: 0.9rem; color: #555; line-height: 1.5; margin-bottom: 1.5rem; min-height: 80px; }
+    .btn-primary-small { background-color: #C83B89; color: #FFF; padding: 0.5rem 1.5rem; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: 600;}
+    .btn-outline-small { background-color: #FDF2F8; color: #C83B89; padding: 0.5rem 1.5rem; border-radius: 20px; text-decoration: none; font-size: 0.85rem;font-weight: 600; }
+    .testimonials-grid { display: flex; justify-content: center; gap: 1.5rem; max-width: 1100px; margin: 0 auto;}
+    .testimonial-card { flex: 1; background-color: #FAFAFA; border-radius: 16px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+    .testimonial-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;}
+    .user-avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover;}
+    .user-name { font-size: 1rem; font-weight: 700; margin: 0;}
+    .stars { color: #F59E0B; font-size: 0.85rem; }
+    .testimonial-quote { font-size: 0.85rem; color: #666; line-height: 1.4; margin: 0; }
+    .carousel-controls { display: flex; justify-content: center; gap: 1rem; margin-top: 2rem; margin-bottom: 4rem;}
+    .carousel-btn {width: 36px; height: 36px; border-radius: 50%; border: 1px solid #E5E7EB; background-color: #FFF; color: #666; cursor: pointer; display: flex; align-items: center; justify-content: center;}
+
+    .testimonials-section{ flex-direction: column; }
+    .info-section.desktop-only {display: flex !important; flex-direction: column; align-items: center; width: 100%; margin: 4rem 0 2rem 0;}
+    .section-title-info { font-size: 1.40rem; font-weight: 600; color: #333; margin-bottom: 3.5rem; text-align: center; }
+    .info-grid { display: flex !important; flex-direction: row; justify-content: center; align-items: stretch; gap: 3rem; max-width: 1100px; width: 100%; margin: 0 auto; }
+    .info-grid .info-card { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: space-between;text-align: center; padding: 0 1rem; }
+    .info-grid .material-symbols-outlined { font-size: 2.2rem !important; color: #C83B89; margin-bottom: 1rem; }
+    .info-grid .testimonial-quote { font-size: 0.875rem; color: #555; line-height: 1.5; margin-bottom: 1.5rem; min-height: 75px;}
+    .info-grid .btn-primary { background-color: #C83B89; color: #FFFFFF; padding: 0.6rem 1.8rem; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: 600; width: auto; }
+    .info-grid .btn-secondary { background-color: #FDF2F8; color: #C83B89; border: none; padding: 0.6rem 1.8rem; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: 600; width: auto;}
+
 }
