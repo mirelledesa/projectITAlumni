@@ -117,7 +117,7 @@ body {
 
 .user-avatar-placeholder {
     width: 5.5rem;      
-    height: 5.5rem;      /* Keeps it square */
+    height: 5.5rem;      
     border-radius: 8px;
     flex-shrink: 0;
 }
@@ -153,7 +153,7 @@ body {
    
 }
 
-/*responsivity*/ 
+/*responsiviness*/ 
 /*header*/
 .desktop-brand,
 .desktop-nav,
@@ -161,7 +161,7 @@ body {
     display: none !important;
 }
 
-/* Breakpoint 1: Tablet (>= 768px) */
+/* Breakpoint 1: (768px) */
 @media (min-width: 768px) {
     .desktop-brand {
         display: flex !important;
@@ -186,7 +186,7 @@ body {
     }
 }
 
-/*Breakpoint 2: Desktop (>= 1024px)*/
+/*Breakpoint 2: (1024px)*/
 @media (min-width: 1024px) {
     body {
         padding-bottom: 0;

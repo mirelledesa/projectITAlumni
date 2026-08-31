@@ -49,16 +49,16 @@
       <!-- Filters (Desktop) -->
       <div class="desktop-filters">
                 <span class="filter-label">Filters:</span>
-                <button type="button" class="filter-btn">Recent Activity</button>
-                <button type="button" class="filter-btn active">Popular</button>
-                <button type="button" class="filter-btn">Most Connected</button>
+                <button type="button" class="filter-btn" data-filter="recent-activity">Recent Activity</button>
+                <button type="button" class="filter-btn active" data-filter="most-popular">Popular</button>
+                <button type="button" class="filter-btn" data-filter="most-connected">Most Connected</button>
       </div>
     </div>
    
     <!-- User List -->
     <section class="network-list">
       <!-- User Item 1 -->
-      <article class="network-card">
+      <article class="network-card" data-category="most-popular">
         <div class="user-info">
           <h2 class="user-name">John Doe</h2>
           <p class="user-role">Class of 2010</p>
@@ -68,7 +68,7 @@
         <button type="button" class="btn-primary desktop-action-btn">Message</button>
       </article>
 
-      <article class="network-card">
+      <article class="network-card" data-category="most-popular">
         <div class="user-info">
           <h2 class="user-name">Sarah Johnson</h2>
           <p class="user-role">Class of 2015</p>
@@ -79,7 +79,7 @@
       </article>
 
       <!-- User Item 3 -->
-      <article class="network-card">
+      <article class="network-card" data-category="most-connected">
         <div class="user-info">
           <h2 class="user-name">Michael Brown</h2>
           <p class="user-role">Class of 2025</p>
@@ -90,7 +90,7 @@
       </article>
 
       <!-- User Item 4 -->
-       <article class="network-card">
+       <article class="network-card" data-category="most-connected">
         <div class="user-info">
           <h2 class="user-name">Emily Davis</h2>
           <p class="user-role">Class of 2012</p>
@@ -101,7 +101,7 @@
       </article>
 
        <!-- User Item 5 -->
-       <article class="network-card">
+       <article class="network-card" data-category="recent-activity">
         <div class="user-info">
           <h2 class="user-name">James Lee</h2>
           <p class="user-role">Class of 2005</p>
@@ -138,5 +138,6 @@
              <p class="p-nav-bottom">Profile</p>
         </a>
     </nav>
+    <script src="./dist/search.js"></script>
 </body>
 </html>

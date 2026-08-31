@@ -1,8 +1,6 @@
 
 /*index.css*/
 
-
-
 body.welcome-page {
     display: flex;
     flex-direction: column;
@@ -63,7 +61,7 @@ body.welcome-page {
     color: var(--color-text);
 }
 
-/*responsivity*/
+/*responsiviness*/
 
 
 .welcome-actions {

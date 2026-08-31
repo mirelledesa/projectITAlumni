@@ -106,7 +106,7 @@
 .link-highlight:hover {
     text-decoration: underline;
 }
-/* resposive */
+/* responsiviness */
 
 .register-subtitle {
     display: none;
@@ -130,8 +130,8 @@
 .forgot-link{
     font-size: 0.8125rem;
 }
-/* responsivity*/ 
-/*breakPoint 1 Tablete (768px) */
+/* responsiviness*/ 
+/*breakPoint 1: Tablet (768px) */
 @media (min-width: 768px) {
 body.register-page,
 body.login-page {background-color: #F3F4F6; display: flex; align-items: center;justify-content: center; min-height: 100vh }
