@@ -14,20 +14,47 @@
    </head>
 <body class="network-page">
    <header class="app-header">
-      <h1 class="title-app-header">Networking</h1>
-        <div class="user-avatar">
+     <h1 class="title-app-header">Networking</h1> 
+   
+     <div class="desktop-brand">
+       <img src="./assets/images/logo-header-desktop.png" alt="logo enterprise" class="logo-header-desktop">  
+      </div>
+
+      <nav class="desktop-nav">
+        <a href="./home.html" class="desktop-nav-link">Home</a>
+        <a href="./network.html" class="desktop-nav-link active">Networking</a>
+        <a href="./oportunitats.html" class="desktop-nav-link">Job Opportunities</a>
+      </nav>
+
+        <div class="header-actions">
+            <div class="desktop-icons">
+                <span class="material-symbols-outlined">search</span>
+                <span class="material-symbols-outlined">notifications</span>
+                <span class="material-symbols-outlined">settings</span>
+            </div>
+           <div class="user-avatar">
             <span class="material-symbols-outlined">leaderboard</span>
             <img src="./assets/images/avatar (1).png" alt="ITAlumni" class="header-logo">
+           </div>
         </div>
     </header>
 
   <main class="network-container">
-    <!-- Search Bar -->
-    <div class="search-bar">
-      <span class="material-symbols-outlined search-icon">search</span>
-      <input type="text" class="search-input" placeholder="Buscar alumni..." />
+    <div class="network-controls">
+         <!-- Search Bar -->
+      <div class="search-bar">
+        <span class="material-symbols-outlined search-icon">search</span>
+        <input type="text" class="search-input" placeholder="Buscar alumni..." />
+      </div>
+      <!-- Filters (Desktop) -->
+      <div class="desktop-filters">
+                <span class="filter-label">Filters:</span>
+                <button type="button" class="filter-btn">Recent Activity</button>
+                <button type="button" class="filter-btn active">Popular</button>
+                <button type="button" class="filter-btn">Most Connected</button>
+      </div>
     </div>
-
+   
     <!-- User List -->
     <section class="network-list">
       <!-- User Item 1 -->
@@ -38,6 +65,7 @@
           <p class="user-role">CEO at TechSolutions Inc</p>
         </div>
         <div class="user-avatar-placeholder"></div>
+        <button type="button" class="btn-primary desktop-action-btn">Message</button>
       </article>
 
       <article class="network-card">
@@ -47,6 +75,7 @@
           <p class="user-role">CEO of Marketing Director at Green</p>
         </div>
         <div class="user-avatar-placeholder"></div>
+        <button type="button" class="btn-primary desktop-action-btn">Message</button>
       </article>
 
       <!-- User Item 3 -->
@@ -57,6 +86,7 @@
           <p class="user-role">Founder of EduLearn Academy</p>
         </div>
         <div class="user-avatar-placeholder"></div>
+        <button type="button" class="btn-primary desktop-action-btn">Message</button>
       </article>
 
       <!-- User Item 4 -->
@@ -67,6 +97,7 @@
           <p class="user-role">Reaserch Cientist at BioTech Labs</p>
         </div>
         <div class="user-avatar-placeholder"></div>
+        <button type="button" class="btn-primary desktop-action-btn">Message</button>
       </article>
 
        <!-- User Item 5 -->
@@ -77,6 +108,7 @@
           <p class="user-role">Reaserch Cientist </p>
         </div>
         <div class="user-avatar-placeholder"></div>
+        <button type="button" class="btn-primary desktop-action-btn">Message</button>
       </article>
     </section>
   </main>

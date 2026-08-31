@@ -100,11 +100,11 @@ body.welcome-page {
     .header-start .btn-primary, .header-start .btn-secondary{  width: auto ; padding: 0.5rem 1.7rem; font-size: 0.85rem; white-space: nowrap; font-weight: 400; margin-left: 2rem; }
     .header-start .material-symbols-outlined {font-size: 0.80rem;}
     .logo-img { max-width: 130px; margin: 0; }
-
+}
    
     .play-btn{ position: absolute; top: 70%; left: 50%; display: flex}
-    .welcome-container { max-width: 850px; margin: 6rem 1.5rem; }
-    .welcome-heading { font-size: 2.5rem; font-weight: 700; color: var(--color-text); margin-bottom: 2rem; display: block !important; }
+    .welcome-container { max-width: 850px; margin: 2rem 1.5;  }
+    .welcome-heading { font-size: 2.5rem; font-weight: 700; color: var(--color-text); margin-bottom: 2rem; display: block !important; margin-top: 5rem; }
     .welcome-tagline { font-size: 1.15rem; }
     .welcome-actions { flex-direction: row; justify-content: center; max-width: 360px; margin-top: 0.3rem;}
     .desktop-only { display: flex !important; }
@@ -141,7 +141,7 @@ body.welcome-page {
     .info-grid .btn-primary { background-color: #C83B89; color: #FFFFFF; padding: 0.6rem 1.8rem; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: 600; width: auto; }
     .info-grid .btn-secondary { background-color: #FDF2F8; color: #C83B89; border: none; padding: 0.6rem 1.8rem; border-radius: 20px; text-decoration: none; font-size: 0.85rem; font-weight: 600; width: auto;}
     
-    .footer.desktop-only { display: flex !important; width: 100%; background-color: #1E2026; color: #FFFFFF; padding: 3.5rem 1.5rem 2rem 1.5rem; margin-top: 4rem; }
+    .footer.desktop-only { display: flex !important; width: 100%; background-color: #1E2026; color: #FFFFFF; padding: 3.5rem 1.5rem 2rem 1.5rem; ; }
     .footer-container { max-width: 1100px; width: 100%; margin: 0 auto; display: flex; flex-direction: column; gap: 2.5rem; }
     .footer-newsletter { display: flex; flex-direction: column; align-items: center; gap: 1.2rem;}
     .newsletter-title { font-size: 1.15rem; font-weight: 600; color: #FFFFFF; margin: 0;}

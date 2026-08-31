@@ -152,3 +152,111 @@ body {
     z-index: 100;
    
 }
+
+/*responsivity*/ 
+/*header*/
+.desktop-brand,
+.desktop-nav,
+.desktop-icons {
+    display: none !important;
+}
+
+/* Breakpoint 1: Tablet (>= 768px) */
+@media (min-width: 768px) {
+    .desktop-brand {
+        display: flex !important;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .logo-icon {
+        color: #C83B89;
+        font-weight: 800;
+        font-size: 1.25rem;
+    }
+
+    .logo-text {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #1F2937;
+    }
+
+    .mobile-leaderboard {
+        display: none !important;
+    }
+}
+
+/*Breakpoint 2: Desktop (>= 1024px)*/
+@media (min-width: 1024px) {
+    body {
+        padding-bottom: 0;
+    }
+
+    .bottom-nav,
+    .title-app-header {
+        display: none !important;
+    }
+
+    .app-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 4rem;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #E5E7EB;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .logo-icon {
+        font-size: 1.5rem;
+    }
+
+    .logo-text {
+        font-size: 1.25rem;
+    }
+
+    .desktop-nav {
+        display: flex !important;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .desktop-nav-link {
+        text-decoration: none;
+        color: #6B7280;
+        font-size: 0.95rem;
+        font-weight: 500;
+        padding-bottom: 0.25rem;
+        border-bottom: 2px solid transparent;
+        transition: all 0.2s ease;
+    }
+
+    .desktop-nav-link:hover,
+    .desktop-nav-link.active {
+        color: #C83B89;
+        border-bottom-color: #C83B89;
+    }
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .desktop-icons {
+        display: flex !important;
+        align-items: center;
+        gap: 1rem;
+        color: #4B5563;
+        cursor: pointer;
+    }
+
+    .header-logo {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}

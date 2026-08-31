@@ -85,3 +85,38 @@ body.network-page {
     margin-left: 0.1rem;
 }
 
+/*responsivity*/
+.desktop-filters,
+.user-location
+.material-symbols-outlined {
+    display: none !important;}
+
+/*Breakpoint 1: Tablet (>= 768px e < 1024px)*/
+@media (min-width: 768px) {
+    body.network-page { background-color: #F3F4F6;}
+    .network-container {max-width: 680px; margin: 1.5rem auto;}
+    .logo-header-desktop{ max-width: 150px; margin-right: 1rem;}
+    .user-avatar .material-symbols-outlined { display: none !important;}
+}
+/*Breakpoint 2: Desktop (>= 1024px)*/
+@media (min-width: 1024px) {
+   /* .app-header{display: flex;justify-content: space-between; align-items: center; gap: 3rem;} */
+    .desktop-nav { display: flex !important; align-items: center; gap: 2rem; margin-right: auto; }
+    body.network-page { background-color: #FFFFFF;}
+    .user-avatar-placeholder {display: none !important;}
+    .logo-header-desktop{ max-width: 150px; margin-right: 2rem;}
+    .desktop-filters { display: flex !important; align-items: center; gap: 1.5rem; font-size: 0.875rem;}
+    .network-container { max-width: 1200px; margin: 2rem auto; padding: 0 2rem; gap: 2rem;}
+    .network-controls { display: flex; justify-content: space-between; align-items: center; width: 100%;}
+    .search-bar { max-width: 300px; margin: 0; border: 1px solid #6B7280; border-radius: 5px;}
+    .search-input{background-color: #FFFFFF};
+    .filter-label { color: #6B7280; font-weight: 500; }
+    .filter-btn { background: none; border: none; color: #6B7280; cursor: pointer; padding-bottom: 0.25rem; border-bottom: 2px solid transparent; font-size: 0.75rem;}
+    .filter-btn.active {color: #C83B89; border-bottom-color: #C83B89; font-weight: 800; }
+    .network-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;}
+    .network-card {flex-direction: column; align-items: flex-start; justify-content: space-between;  padding: 2.5rem; border: none; background-color: transparent; box-shadow: none; gap: 0.3rem; }
+    .user-info { gap: 0.4rem; }
+    .user-name { font-size: 1rem; color: #111827;}
+    .user-role { font-size: 0.8125rem; color: #6B7280;}
+    .desktop-nav-link.active{ font-weight: 800;}
+}   
