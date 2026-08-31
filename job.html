@@ -10,18 +10,39 @@
    
    <link rel="stylesheet" href="./styles/components/main.css" />
    <link rel="stylesheet" href="./styles/components/buttons.css">
-   <link rel="stylesheet" href="styles/components/network.css" />
+   <link rel="stylesheet" href="styles/components/network.css">
+   <link rel="stylesheet" href="./styles/components/job.css">
 </head>
     <body class="job-page">
    <header class="app-header">
       <h1 class="title-app-header">Job Portal</h1>
-        <div class="user-avatar">
+
+      <div class="desktop-brand">
+        <img src="./assets/images/logo-header-desktop.png" alt="logo enterprise" class="logo-header-desktop">
+      </div>
+
+      <nav class="desktop-nav">
+        <a href="./home.html" class="desktop-nav-link">Home</a>
+        <a href="./network.html" class="desktop-nav-link">Networking</a>
+        <a href="./oportunitats.html" class="desktop-nav-link active">Job Opportunities</a>
+      </nav>
+
+        <div class="header-actions">
+            <div class="desktop-icons">
+                <span class="material-symbols-outlined">search</span>
+                <span class="material-symbols-outlined">notifications</span>
+                <span class="material-symbols-outlined">settings</span>
+            </div>
+           <div class="user-avatar">
             <span class="material-symbols-outlined">leaderboard</span>
             <img src="./assets/images/avatar (1).png" alt="ITAlumni" class="header-logo">
+           </div>
         </div>
+       
     </header>
 
-  <main class="network-container">
+  <main class="network-container"> 
+    <h2 class="title-mobile-header">Jobs</h2>
     <!-- Search Bar -->
     <div class="search-bar">
       <span class="material-symbols-outlined search-icon">search</span>

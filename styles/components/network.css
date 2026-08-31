@@ -91,14 +91,14 @@ body.network-page {
 .material-symbols-outlined {
     display: none !important;}
 
-/*Breakpoint 1: Tablet (>= 768px e < 1024px)*/
+/*Breakpoint 1: Tablet 768px */
 @media (min-width: 768px) {
     body.network-page { background-color: #F3F4F6;}
     .network-container {max-width: 680px; margin: 1.5rem auto;}
     .logo-header-desktop{ max-width: 150px; margin-right: 1rem;}
     .user-avatar .material-symbols-outlined { display: none !important;}
 }
-/*Breakpoint 2: Desktop (>= 1024px)*/
+/*Breakpoint 2: Desktop (1024px)*/
 @media (min-width: 1024px) {
    /* .app-header{display: flex;justify-content: space-between; align-items: center; gap: 3rem;} */
     .desktop-nav { display: flex !important; align-items: center; gap: 2rem; margin-right: auto; }
