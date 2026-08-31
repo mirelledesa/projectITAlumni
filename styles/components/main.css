@@ -244,6 +244,7 @@ body {
         align-items: center;
         gap: 1.5rem;
     }
+    
 
     .desktop-icons {
         display: flex !important;
@@ -259,4 +260,26 @@ body {
         border-radius: 50%;
         object-fit: cover;
     }
+     .logo-header-desktop { 
+        max-width: 150px; 
+        margin-right: 2rem;
+    }
+    .filter-btn.active {
+        color: #C83B89; 
+        border-bottom-color: #C83B89; 
+        font-weight: 800; 
+    }
+    .desktop-nav-link.active {
+         font-weight: 800;}
+}  
+.title-desktop-header{display: none;} 
+@media (min-width: 768px) {
+    .network-container {max-width: 680px; margin: 1.5rem auto;}
+    .logo-header-desktop{ max-width: 150px; margin-right: 1rem;}
+    .user-avatar .material-symbols-outlined { display: none !important;}
+}
+@media(min-width: 1024px){
+    .title-desktop-header{ display: flex!important; justify-content: center; align-items: center; font-size: 2rem; font-weight: 500;}
+    .desktop-nav{  display: flex !important; align-items: center; gap: 2rem; margin-right: auto; 
+}
 }

@@ -54,6 +54,17 @@ body.feed-page {
     color: #888888;
     margin-bottom: 0.6rem;
 }
+/*responsiviness*/
+
+
+@media (min-width: 1024px){
+    .logo-header-desktop{ max-width: 150px;}
+    .feed-cards{ gap: 1rem;}
+    .feed-card{ padding: 4rem;}
+   
+}
+   
+
 
 
 
