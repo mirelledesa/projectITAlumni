@@ -98,10 +98,10 @@ body.welcome-page {
     .header-start .btn-primary, .header-start .btn-secondary{  width: auto ; padding: 0.5rem 1.7rem; font-size: 0.85rem; white-space: nowrap; font-weight: 400; margin-left: 2rem; }
     .header-start .material-symbols-outlined {font-size: 0.80rem;}
     .logo-img { max-width: 130px; margin: 0; }
-}
+
    
     .play-btn{ position: absolute; top: 70%; left: 50%; display: flex}
-    .welcome-container { max-width: 850px; margin: 2rem 1.5;  }
+    .welcome-container { max-width: 850px; margin: 2rem 1.5rem;  }
     .welcome-heading { font-size: 2.5rem; font-weight: 700; color: var(--color-text); margin-bottom: 2rem; display: block !important; margin-top: 5rem; }
     .welcome-tagline { font-size: 1.15rem; }
     .welcome-actions { flex-direction: row; justify-content: center; max-width: 360px; margin-top: 0.3rem;}
@@ -163,3 +163,4 @@ body.welcome-page {
     .footer-socials a {color: #3B82F6; font-size: 1.1rem; transition: opacity 0.2s;}
     .footer-socials a:last-child { color: #EF4444;}
     .footer-socials a:hover {opacity: 0.8;}
+}
