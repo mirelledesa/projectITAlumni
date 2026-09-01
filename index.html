@@ -8,21 +8,192 @@
     <link rel="stylesheet" href="./styles/components/main.css">
     <link rel="stylesheet" href="./styles/components/buttons.css">
     <link rel="stylesheet" href="styles/components/index.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="welcome-page">
+
     <header class="header">
-        <div class="logo-container">
-            <img src="./assets/images/logo-header.png" alt="ITAlumni-logo" class="logo-img">
+       
+            <div class="logo-container">
+                <img src="./assets/images/logo-header.png" alt="ITAlumni-logo" class="logo-img">
+            </div>
+            <div class="header-desktop-home desktop-only">
+                <nav class="desktop-nav-home">
+                <a href="./index.html" class="desktop-home active">Inici</a>
+                <a href="./network.html" class="desktop-home">Xarxa</a>
+                <a href="./job.html" class="desktop-home">Oportunits de feina</a>
+                </nav>
+                <div class="header-start">
+                    <a href="./register.html" class="btn-secondary"><span class="material-symbols-outlined">inbox_text</span>Apunta't </a>
+                    <a href="./register.html" class="btn-primary"><span class="material-symbols-outlined">person_3</span>Com et venue?</a>
+                </div>
         </div>
     </header>
+
     <main class="main"> 
         <div class="welcome-container">
+
+            <h1 class="welcome-heading desktop-only">Benvingut, Alumni</h1>
             <p class="welcome-tagline">
                 Connectant i empoderant a la nostra comunitat global d'alumnes
             </p>
+            <div class="welcome-actions">
+                <a href="./register.html" class="btn-primary">Uneix-te</a>
+                <a href="#about" class="btn-secondary desktop-only">Això que fem</a>
+            </div>
 
-            <a href="./register.html" class="btn-primary">Uneix-te</a>
-        </div>
+            <!-- Hero banner -->
+            <section class="hero-media desktop-only">
+              <div class="hero-banner">
+                <img src="./assets/images/hero-banner.png" alt="Alumni Group" class="hero-img">
+              </div>
+            </section>
+
+            <!--info-->
+
+            <section class="info-section desktop-only">
+                 <h2 class="section-title-info">Que guanyes en formar-ne part?</h2>
+
+                <div class="info-grid">
+                    <!--card 1-->
+                    <article class="info-card">
+                    <span class="material-symbols-outlined">school</span>
+                    <p class="testimonial-quote">
+                        Lorem ipicing elit. ab! la feina dels meus somnis en el món tech amb el seu increïble programa de mentoria."
+                    </p>
+                    <a href="./register.html" class="btn-primary">Apunta't ja</a>
+                    </article>
+                    
+                    <!--card 2-->
+                   <article class="info-card">
+                   <span class="material-symbols-outlined">forum</span>
+                    <p class="testimonial-quote">
+                        Lorevi deleniti ab! nis en el món tech amb el seu increïble programa de mentoria."
+                    </p>
+                    <a href="./register.html" class="btn-secondary">Apunta't ja</a>
+                 </article>
+
+                    <!--card 3-->
+                   <article class="info-card">
+                   <span class="material-symbols-outlined">person_add</span>
+                    <p class="testimonial-quote">
+                        Id necessitatibus impedit deleniti ab! la feina is en el món tech amb el seu increïble programa de mentoria."
+                    </p>
+                    <a href="./register.html" class="btn-secondary">Apunta't ja </a>
+                   </article>
+                </div>
+            </section>
+            
+            <!--comments-->
+            <section class="testimonials-section desktop-only">
+            <h2 class="section-title">"T'ensenyem el que opinen els nostres súper-usuaris!"</h2>
+            
+            <div class="testimonials-grid">
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="./assets/images/avatar1-hero-banner.webp" alt="Mikel" class="user-avatar">
+                        <div class="user-info">
+                            <h3 class="user-name">Mikel</h3>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-quote">
+                        "Gràcies a IT Alumni vaig aconseguir la feina dels meus somnis en el món tech amb el seu increïble programa de mentoria."
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="./assets/images/avatar1-hero-banner.webp" alt="Emma" class="user-avatar">
+                        <div class="user-info">
+                            <h3 class="user-name">Emma</h3>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-quote">
+                        "La meva xarxa d'aquesta comunitat ha estat clau: va revolucionar la meva carrera i em va mostrar camins insospitats."
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="./assets/images/avatar (1).png" alt="Laia" class="user-avatar">
+                        <div class="user-info">
+                            <h3 class="user-name">Laia</h3>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-quote">
+                        "IT Alumni em va donar les eines i l'autoestima per fer realitat el meu somni d'emprendre."
+                    </p>
+                </div>
+
+            </div>
+
+            
+            <div class="carousel-controls">
+                <button class="carousel-btn" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-btn" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </section>
+
     </main>
+
+    <footer class="footer desktop-only">
+    <div class="footer-container">
+        
+        <div class="footer-newsletter">
+            <h3 class="newsletter-title">"No et perdis res, subscriu-te!"</h3>
+            <form class="newsletter-form">
+                <div class="input-group">
+                    <span class="material-symbols-outlined input-icon">mail</span>
+                    <input type="email" placeholder="El teu email" required class="newsletter-input">
+                </div>
+                <button type="submit" class="btn-primary newsletter-btn">Subscriu-te</button>
+            </form>
+        </div>
+
+        <div class="footer-nav-row">
+            <div class="footer-logo">
+                <img src="./assets/images/logo-black.png" alt="ITAlumni Logo" class="footer-logo-img">
+            </div>
+            <nav class="footer-links">
+                <a href="#about">Sobre nosaltres</a>
+                <a href="#features">Funcionalitats</a>
+                <a href="#help">Centre d'ajuda</a>
+                <a href="#contact">Contacta'ns</a>
+                <a href="#faqs">FAQs</a>
+                <a href="./job.html">Oportunitats laborals</a>
+            </nav>
+        </div>
+
+        <hr class="footer-divider">
+
+        <div class="footer-bottom">
+            <div class="language-selector">
+                <select class="lang-select">
+                    <option value="ca">Català</option>
+                    <option value="es">Castellà</option>
+                    <option value="en">Anglès</option>
+                </select>
+            </div>
+
+            <div class="footer-copyright">
+                <p>© 2024 Brand, Inc. • Privadesa • Termes d'ús</p>
+                <p>• Mapa del lloc</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </div>
+</footer>
 </body>
 </html>

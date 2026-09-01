@@ -16,14 +16,33 @@
 <body class="feed-page">
     <header class="app-header">
       <h1 class="title-app-header">Home</h1>
-        <div class="user-avatar">
+
+      <div class="desktop-brand">
+        <img src="./assets/images/logo-header-desktop.png" alt="logo enterprise" class="logo-header-desktop">
+      </div>
+
+      <nav class="desktop-nav">
+        <a href="./home.html" class="desktop-nav-link active">Home</a>
+        <a href="./network.html" class="desktop-nav-link">Networking</a>
+        <a href="./job.html" class="desktop-nav-link">Job Opportunities</a>
+      </nav>
+
+        <div class="header-actions">
+            <div class="desktop-icons">
+                <span class="material-symbols-outlined">search</span>
+                <span class="material-symbols-outlined">notifications</span>
+                <span class="material-symbols-outlined">settings</span>
+            </div>
+           <div class="user-avatar">
             <span class="material-symbols-outlined">leaderboard</span>
             <img src="./assets/images/avatar (1).png" alt="ITAlumni" class="header-logo">
-            
+           </div>
         </div>
+       
     </header>
 
     <main class="feed-container">
+        <h2 class="title-desktop-header">Home</h2>
         <!--search-->
          <div class="search-bar">
             <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -49,7 +68,7 @@
     <!--Bottom Navigation Bar-->
     <nav class="bottom-nav">
         <!--Home-->
-        <a href="./home.html" class="nav-item" tittle="Home">
+        <a href="./home.html" class="nav-item" title="Home">
         <i class="fa-solid fa-house"></i>
          <p class="p-nav-bottom">Home</p>
         </a>
@@ -59,17 +78,17 @@
             <p class="p-nav-bottom">Networking</p>
         </a>
         <!--job / oportunitats-->
-        <a href="./oportunitats.html" class="nav-item" tittle="Job / oportunitats">
+        <a href="./oportunitats.html" class="nav-item" title="Job / oportunitats">
             <span class="material-symbols-outlined">business_center</span>
              <p class="p-nav-bottom">Job Portal</p>
         </a>
 
           <!--Profile-->
-        <a href="./oportunitats.html" class="nav-item" tittle="Job / oportunitats">
+        <a href="#" class="nav-item" title="Profile">
             <span class="material-symbols-outlined">person</span>
              <p class="p-nav-bottom">Profile</p>
         </a>
     </nav>
-    
+    <script src="./dist/search.js"></script>
 </body>
 </html>

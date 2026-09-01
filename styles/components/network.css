@@ -1,0 +1,117 @@
+body.network-page {
+    padding-bottom: 75px;
+   
+}
+
+.network-container {
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* User List */
+.network-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+/* User Card */
+.network-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 1rem;
+    gap: 2.5rem;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.30rem;
+   
+}
+
+.user-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.30rem;
+    
+}
+
+.user-role {
+    font-size: 0.6rem;
+    color: #888888;
+    margin: 0 0 0.5rem 0;
+}
+    
+
+.user-avatar-placeholder {
+    width: 7rem;
+    height: 7rem;
+    background-color: #E5E7EB;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+
+
+/* filters Job pag*/
+
+/* Filters Container */
+.filters-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Icons styling */
+.filter-icon {
+    font-size: 1.1rem;
+    color: #1F2937;
+}
+
+.arrow-icon {
+    font-size: 0.7rem;
+    color: #6B7280;
+    margin-left: 0.1rem;
+}
+
+/*responsiviness*/
+.desktop-filters,
+.user-location
+.material-symbols-outlined {
+    display: none !important;
+}
+
+
+
+/*Breakpoint 2: Desktop (1024px)*/
+@media (min-width: 1024px) {
+    body.network-page { background-color: #FFFFFF;}
+    .user-avatar-placeholder {display: none !important;}
+    .logo-header-desktop{ max-width: 150px; margin-right: 2rem;}
+    .desktop-filters { display: flex !important; align-items: center; gap: 1.5rem; font-size: 0.875rem;}
+    .network-container { max-width: 1200px; margin: 2rem auto; padding: 0 2rem; gap: 2rem;}
+    .network-controls { display: flex; justify-content: space-between; align-items: center; width: 100%;}
+    .search-bar { max-width: 300px; margin: 0; border: 1px solid #6B7280; border-radius: 5px;}
+    .search-input{background-color: #FFFFFF};
+    .filter-label { color: #6B7280; font-weight: 500; }
+    .filter-btn { background: none; border: none; color: #6B7280; cursor: pointer; padding-bottom: 0.25rem; border-bottom: 2px solid transparent; font-size: 0.75rem;}
+    .filter-btn.active {color: #C83B89; border-bottom-color: #C83B89; font-weight: 800; }
+    .network-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;}
+    .network-card {flex-direction: column; align-items: flex-start; justify-content: space-between;  padding: 2.5rem; background-color: transparent; box-shadow: none; gap: 0.3rem; }
+    .user-info { gap: 0.4rem; }
+    .user-name { font-size: 1rem; color: #111827;}
+    .user-role { font-size: 0.8125rem; color: #6B7280;}
+    .desktop-nav-link.active{ font-weight: 800;}
+}   

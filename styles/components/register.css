@@ -106,7 +106,7 @@
 .link-highlight:hover {
     text-decoration: underline;
 }
-/* resposive */
+/* responsiviness */
 
 .register-subtitle {
     display: none;
@@ -124,9 +124,23 @@
 /*style login*/
 .forgot-password-container{
     text-align: right;
-    margin-top: -0,25rem;
-    margin-bottom: 0,5rem;
+    margin-top: -0.25rem;
+    margin-bottom: 0.5rem;
 }
 .forgot-link{
     font-size: 0.8125rem;
+}
+/* responsiviness*/ 
+/*breakPoint 1: Tablet (768px) */
+@media (min-width: 768px) {
+body.register-page,
+body.login-page {background-color: #F3F4F6; display: flex; align-items: center;justify-content: center; min-height: 100vh }
+.register-card { box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);}
+.register-subtitle { display: block; font-size: 0.875rem; color: #666666; margin-bottom: 1.5rem;}
+}
+/* Breakpoint 2: Desktop (1024px) */
+@media (min-width: 1024px) {
+    body.register-page,
+    body.login-page { background: url(../../assets/images/background-register.jpg) no-repeat center center / cover; position: relative; }
+    .register-card {max-width: 480px; padding: 2.5rem 3rem; border-radius: 20px; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);}
 }

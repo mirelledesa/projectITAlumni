@@ -1,0 +1,10 @@
+/*responsiviness*/
+
+
+@media (min-width: 1024px) {
+    .search-bar, .filters-container{ display: none !important;}
+    .network-list{ display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; width: 100%}
+    .user-avatar-placeholder{ display: flex !important;}
+    .network-card { display: flex !important; flex-direction: row; align-items: center;justify-content: space-between; }
+}
+
