@@ -88,8 +88,7 @@ body.network-page {
 
 /*responsiviness*/
 .desktop-filters,
-.user-location
-.material-symbols-outlined {
+.user-location{
     display: none !important;
 }
 
@@ -104,7 +103,7 @@ body.network-page {
     .network-container { max-width: 1200px; margin: 2rem auto; padding: 0 2rem; gap: 2rem;}
     .network-controls { display: flex; justify-content: space-between; align-items: center; width: 100%;}
     .search-bar { max-width: 300px; margin: 0; border: 1px solid #6B7280; border-radius: 5px;}
-    .search-input{background-color: #FFFFFF};
+    .search-input{background-color: #FFFFFF;}
     .filter-label { color: #6B7280; font-weight: 500; }
     .filter-btn { background: none; border: none; color: #6B7280; cursor: pointer; padding-bottom: 0.25rem; border-bottom: 2px solid transparent; font-size: 0.75rem;}
     .filter-btn.active {color: #C83B89; border-bottom-color: #C83B89; font-weight: 800; }

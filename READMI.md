@@ -70,4 +70,4 @@ The user interface was built following a **Mobile-First** approach with progress
 - **Semantic HTML5:** Native structural tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`) ensuring SEO and accessibility compliance.
 - **Modern CSS3:** Flexbox, CSS Grid, Custom Properties / CSS Variables (`var(--color)`), and responsive Media Queries.
 - **JavaScript (ES6+):** Lightweight vanilla JavaScript without heavy frameworks for fast load times.
-- **Google Material Symbols:** Scalable and lightweight icon font integration.
+
