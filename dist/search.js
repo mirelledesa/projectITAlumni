@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // =========================================================
-    // 1. LÓGICA DO CARROSSEL
-    // =========================================================
+   
     const track = document.querySelector('.testimonials-grid, .carousel-track');
     const carouselButtons = document.querySelectorAll('.carousel-controls .carousel-btn');
     
@@ -54,9 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   
-    // =========================================================
-    // 2. LÓGICA DE FILTROS E BUSCA
-    // =========================================================
+    
     const searchInput = document.querySelector('.search-input');
     const cardElements = document.querySelectorAll('.network-card, .feed-card');
     const filterButtons = document.querySelectorAll('.desktop-filters .filter-btn');
@@ -132,9 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // =========================================================
-    // 3. LÓGICA DOS BOTÕES DE AÇÃO / CONEXÃO
-    // =========================================================
+  
     const connectButtons = document.querySelectorAll('.card-action-btn, .connect-btn');
     connectButtons.forEach((btn) => {
       btn.addEventListener('click', (e) => {

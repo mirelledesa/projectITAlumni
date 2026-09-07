@@ -6,9 +6,7 @@ interface NetworkCardItem {
 
 document.addEventListener('DOMContentLoaded', (): void => {
 
-  // =========================================================
-  // 1. LÓGICA DO CARROSSEL (Compatível com o seu HTML/CSS)
-  // =========================================================
+  
   const track = document.querySelector<HTMLElement>('.testimonials-grid, .carousel-track');
   const carouselButtons = document.querySelectorAll<HTMLButtonElement>('.carousel-controls .carousel-btn');
   
@@ -60,9 +58,7 @@ document.addEventListener('DOMContentLoaded', (): void => {
   }
 
 
-  // =========================================================
-  // 2. LÓGICA DE FILTROS E BUSCA (Condicional/Independente)
-  // =========================================================
+  
   const searchInput = document.querySelector<HTMLInputElement>('.search-input');
   const cardElements = document.querySelectorAll<HTMLElement>('.network-card, .feed-card');
   const filterButtons = document.querySelectorAll<HTMLButtonElement>('.desktop-filters .filter-btn');
@@ -139,9 +135,7 @@ document.addEventListener('DOMContentLoaded', (): void => {
   }
 
 
-  // =========================================================
-  // 3. LÓGICA DOS BOTÕES DE AÇÃO / CONEXÃO
-  // =========================================================
+  
   const connectButtons = document.querySelectorAll<HTMLButtonElement>('.card-action-btn, .connect-btn');
   connectButtons.forEach((btn: HTMLButtonElement) => {
     btn.addEventListener('click', (e: Event): void => {
