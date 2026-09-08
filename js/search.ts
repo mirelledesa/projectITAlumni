@@ -1,4 +1,4 @@
-// ts
+
 interface NetworkCardItem {
   element: HTMLElement;
   textContext: string;
